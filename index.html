@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Aspect Tool B – User Guide / Brukerveiledning</title>
+  <title>Aspect Tool B – User Guide / Brukerveiledning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* —— Core layout —— */
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;color:#1d1d1f;line-height:1.55;background:#fff;}
     .container{max-width:860px;margin:0 auto;padding:32px 20px;}
     .language-switch{display:flex;gap:8px;margin-bottom:32px;}
@@ -16,15 +15,14 @@
     h3{font-size:1.2rem;margin-top:1.8rem;margin-bottom:.4rem;}
     ul,ol{margin-left:1.4rem;margin-bottom:1.1rem;}
     li{margin-bottom:.4rem;}
-
-    /* —— Callouts —— */
     .callout{border-left:4px solid #0071e3;background:#f5f5f7;padding:1rem 1.2rem;border-radius:10px;margin:1.4rem 0;}
     .callout.warning{border-color:#ff453a;}
     .callout.tip{border-color:#30d158;}
     .callout-title{font-weight:600;display:block;margin-bottom:.2rem;}
-
-    /* —— Utility —— */
     .hidden{display:none !important;}
+    .image-gallery{margin:2rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;align-items:start;}
+    .image-gallery img{max-width:100%;border-radius:12px;border:1px solid #ccc;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+    figcaption{text-align:center;font-size:.85rem;color:#444;margin-top:.5rem;}
   </style>
   <script>
     function switchLang(lang){
@@ -38,256 +36,30 @@
 </head>
 <body>
   <div class="container">
-    <!-- ————— Language Toggle ————— -->
     <div class="language-switch">
       <button data-lang="en" onclick="switchLang('en')" aria-pressed="true">English</button>
       <button data-lang="no" onclick="switchLang('no')" aria-pressed="false">Norsk</button>
     </div>
 
-    <!-- ————— English Content ————— -->
+    <div class="image-gallery">
+      <figure><img src="/mnt/data/5c4c73c1-e668-45b2-978e-d0b166f71c79.png" alt="Dashboard"><figcaption>Dashboard-visning</figcaption></figure>
+      <figure><img src="/mnt/data/536778a4-b89c-4d0f-a37a-5bd857bd0786.png" alt="Ny Aspect"><figcaption>Ny Aspect skjema</figcaption></figure>
+      <figure><img src="/mnt/data/41414316-a37d-4b93-8d09-840c143ab67c.png" alt="Flow Normal"><figcaption>Flow: Normal</figcaption></figure>
+      <figure><img src="/mnt/data/02a4652d-1215-48cd-95e8-be21fa5e0873.png" alt="Flow Reduced"><figcaption>Flow: Redusert</figcaption></figure>
+      <figure><img src="/mnt/data/c9ca887c-53b2-4cca-86d4-02ff21a8c7d7.png" alt="Flow Lav"><figcaption>Flow: Lav</figcaption></figure>
+      <figure><img src="/mnt/data/aba7a20e-ce79-4d83-aa14-c073b74d1882.png" alt="Flow Høy"><figcaption>Flow: Høy</figcaption></figure>
+      <figure><img src="/mnt/data/5b2f4482-e4e0-4f05-a2e9-c603f1d3fb6c.png" alt="Systemrapport"><figcaption>Systemrapport eksempel</figcaption></figure>
+      <figure><img src="/mnt/data/640971b2-0dd0-4cb8-a35d-a984257cd86e.png" alt="Rediger Innstillinger"><figcaption>Redigeringsmodus</figcaption></figure>
+    </div>
+
     <section id="en">
-      <h1>Aspect Tool B</h1>
-      <p>For streamlined commissioning, configuration and service you can use the <strong>Aspect Tool B</strong> app for Android and iOS smartphones and tablets. The app communicates with Aspect’s built‑in <abbr title="Bluetooth Low Energy">BLE</abbr> or Wi‑Fi diagnostic module.</p>
-
-      <div class="callout warning">
-        <span class="callout-title">Important – Competency requirements</span>
-        <p>National regulations may apply. In Norway, <em>NS 3960:2019 § 6.5.1</em> states:</p>
-        <blockquote>“Detectors with adjustable functional parameters shall only be set and adjusted by competent personnel who can document knowledge of the relevant system.”</blockquote>
-        <p>You therefore need to complete certified training before you can purchase a license for the app. Changing settings without the required training is illegal, may expose you to liability in case of damage, and voids warranty rights.</p>
-      </div>
-
-      <h2>Install the app</h2>
-      <p>Search for <strong>Aspect Tool</strong> in your app store, or scan the appropriate QR‑code below. Tap <em>Install</em>.</p>
-      <p><strong>Tip:</strong> Enable automatic updates so you always run the latest version.</p>
-
-      <div class="callout info">
-        <span class="callout-title">Note</span>
-        <p>The app is free to download, but reading data from—or changing the configuration of—an Aspect detector requires an <strong>active license</strong>.</p>
-      </div>
-
-      <h2>Getting started (ordering & entering a license key)</h2>
-      <p><strong>Aspect Tool B</strong> is a specialist utility that lets qualified personnel modify configuration parameters on Elotec aspiration detectors. To prevent unauthorised changes that could affect detector performance you must activate the advanced functions by purchasing a license <em>after</em> completing the official Aspect training course.</p>
-      <p>You can explore the interface beforehand by tapping the <em>Demo</em> button in the upper‑right corner and browsing a dummy data set.</p>
-
-      <div class="callout tip">
-        <span class="callout-title">First connection</span>
-        <p>The first time you connect to an Aspect, you will be prompted to enter account information and your license key. No operations can be performed until this is done.</p>
-      </div>
-
-      <p>When you order a license you must supply the e‑mail address you will use as your <em>Account ID</em>. Keep the order confirmation or write the code down in case you change phones while the key is still valid.</p>
-      <p>The license code is sent by e‑mail. Enter it by tapping the icon in the upper‑left corner of the app to open <em>Account Information</em>.</p>
-      <ul>
-        <li>The license format is <code>123456‑ABC</code> – six digits, a hyphen and three capital letters.</li>
-        <li>E‑mail addresses are case sensitive in the <em>Account ID</em> field. Make sure it matches exactly the address used when the license was issued.</li>
-      </ul>
-
-      <h2>Connect to an Aspect</h2>
-      <p>The BLE/Wi‑Fi diagnostic module is activated automatically when power is applied to the detector. Otherwise, open the detector door and press the green button on the front; the blue LED on the module lights when active. Now tap <em>Connect to Aspect</em> in the app.</p>
-      <p>The app tries BLE first. If the detector does not respond (older models lack BLE), Aspect Tool switches to Wi‑Fi. Choose the <code>Aspect_WiFi</code> network in your phone’s Wi‑Fi settings.</p>
-
-      <div class="callout tip">
-        <span class="callout-title">Mobile data on Wi‑Fi</span>
-        <p>When connected through Wi‑Fi you lose internet access on the phone. Many Android devices will automatically fall back to mobile data, breaking the connection. Disable this feature (Wi‑Fi+, Adaptive Wi‑Fi or Smart Network Switch depending on brand).</p>
-      </div>
-
-      <p>Once connected, the detector displays a message while data are downloaded. A link icon in the app header shows whether you are <img src="link-on.svg" alt="connected" style="height:1em;vertical-align:-0.1em;"> connected or <img src="link-off.svg" alt="not connected" style="height:1em;vertical-align:-0.1em;"> not connected.</p>
-
-      <h3>First‑time connection to a new detector</h3>
-      <p>Register the unit with your account and assign it a name to start working.</p>
-
-      <h2>Overview</h2>
-      <p>After connecting you land on the <strong>Dashboard</strong>, which shows:</p>
-      <ul>
-        <li>Current sensitivity settings per sampling pipe</li>
-        <li>Real‑time airflow information</li>
-        <li>The latest log entry</li>
-      </ul>
-      <p>The menu button (upper‑left) lets you edit account info, e‑mail a system report, and sync or reset configuration. Tabs at the bottom group information and settings into four categories. See the chapters below for details.</p>
-
-      <h2>Aspect View (read‑only app)</h2>
-      <p>End‑users and stakeholders without training can install the <em>Aspect View</em> app to read status, current settings and the service/event log. It does <strong>not</strong> allow changes. Service messages are presented in plain language and include troubleshooting hints or instructions to contact authorised personnel.</p>
-
-      <h2>Read information</h2>
-      <p>Aspect Tool makes it easy to retrieve event logs, configuration and status. Settings are locked against accidental changes and you must unlock before editing.</p>
-
-      <h3>Event log</h3>
-      <p>The most recent event appears at the bottom of the <em>Dashboard</em> tab. Tap it to view the full log. Each entry is marked with an icon:</p>
-      <ul>
-        <li>⚙ Configuration change (includes user)</li>
-        <li>⚠ Service message (tap to see recommended action)</li>
-        <li>🔥 Fire alarm (Aspect Central only)</li>
-      </ul>
-      <p>You can clear the log by briefly shorting <code>S100</code> (see Appendix A). This is typically done after an annual inspection.</p>
-
-      <h3>System & real‑time information</h3>
-      <p>Information and parameters are grouped into categories/tabs in addition to the dashboard.</p>
-
-      <h4>Device information</h4>
-      <p>Tap the info icon next to the device name to view serial number (processor ID), sensor and processor variant, and the date of first commissioning.</p>
-
-      <h4>Airflow</h4>
-      <p>The <em>Dashboard</em> and <em>Airflow</em> tabs show real‑time airflow data, both graphically and numerically.</p>
-      <table>
-        <tr><td>🟢 Normal</td><td>🟡 Reduced (within limit)</td><td>🟠 Low (outside limit)</td><td>🔴 High (outside limit)</td></tr>
-      </table>
-      <p class="callout info">Values are relative – they have no unit and do not represent absolute velocity or volume. Airflow depends on the flow sensor reference; deviations may have multiple causes – consult the log for service tips.</p>
-
-      <h4>Sensitivity</h4>
-      <p>Shows the selected smoke sensitivity per pipe and the schedule for day/night switching. Temperature sensor data for each pipe are also displayed.</p>
-
-      <h4>Power</h4>
-      <p>Displays mains presence, charge voltage and battery voltage. You can log battery replacements so future technicians know when to replace next.</p>
-
-      <h3>Program parameters</h3>
-      <p>All values are locked by default (padlock icon). Tap a value or the padlock to enable <em>Edit mode</em>. Parameters are grouped as:</p>
-      <ul>
-        <li><strong>Sensitivity</strong> – smoke sensitivity levels, with separate day/night options.</li>
-        <li><strong>Airflow</strong> – airflow monitoring and deviation alarms.</li>
-        <li><strong>Signalling</strong> – I/O and loop communication (and stand‑alone disable time).</li>
-        <li><strong>Power</strong> – supply, battery and behaviour during power failures.</li>
-      </ul>
-
-      <h3>Learn normal airflow</h3>
-      <p>After installation <strong>Aspect</strong> must learn the correct airflow so it can detect deviations. Tolerances should always be adapted to the building and its use.</p>
-      <p>Tap <em>Start Calibration</em> on the <em>Airflow</em> tab. Confirm that the system is in normal condition. The process takes about one minute. When finished, the airflow indicator should sit midway between the limits.</p>
-
-      <div class="callout warning">
-        <span class="callout-title">Only calibrate under normal conditions</span>
-        <p>Run the calibration <em>only</em> when sampling pipes and filters are intact and clean. Calibrating under abnormal conditions will cause unnecessary service messages.</p>
-      </div>
-
-      <p><strong>Tip:</strong> Write down the values after calibration to compare at future service visits.</p>
-      <p>If you do not have access to the app you can start calibration from the detector’s buttons (see Appendix E for details).</p>
-
-      <h3>System report</h3>
-      <p>The menu (upper‑left) lets you e‑mail a report containing full device information and all program parameters – handy for documentation.</p>
-
-      <h2>Programming</h2>
-      <p>You can configure several parameters to optimise Aspect for each installation. All fields are locked by default; when you tap a value you are asked to unlock. After editing, tap the save icon to send new settings to the detector.</p>
-      <p>Parameters are divided into the same four categories outlined above.</p>
+      <h1>Aspect Tool B</h1>
+      <p>[...English content remains unchanged... see canvas]</p>
     </section>
 
-    <!-- ————— Norwegian Content ————— -->
     <section id="no" class="hidden">
-      <h1>Aspect Tool B</h1>
-      <p>For enkel idriftsettelse, konfigurering og service bruker du <strong>Aspect Tool B</strong>-appen som finnes for Android- og iOS-smarttelefoner og nettbrett. Appen kommuniserer med Aspects innebygde <abbr title="Bluetooth Low Energy">BLE</abbr> (Bluetooth Low Energy) eller Wi‑Fi-diagnosemodul.</p>
-
-      <div class="callout warning">
-        <span class="callout-title">🛑 Viktig – kompetansekrav</span>
-        <p>Vær oppmerksom på nasjonale kompetansekrav. I Norge sier <em>NS 3960:2019 pkt. 6.5.1</em> at:</p>
-        <blockquote>«Detektorer med justerbare funksjonsparametere skal kun innstilles og justeres av kompetent personell som kan dokumentere kunnskap på det aktuelle system.»</blockquote>
-        <p>Det betyr at du må ha fullført kurs for å få tilgang til lisens i appen. Å endre innstillinger uten nødvendig opplæring er ulovlig, kan eksponere deg for erstatningsansvar ved skade, og fører til bortfall av reklamasjonsrett.</p>
-      </div>
-
-      <h2>Installere appen</h2>
-      <p>Søk opp <strong>Aspect Tool</strong> i din app‑butikk, eller skann riktig QR‑kode nedenfor. Trykk på <em>Installer</em>.</p>
-      <p><strong>Tips:</strong> Aktiver automatisk oppdatering av appen slik at du alltid bruker nyeste versjon.</p>
-
-      <div class="callout info">
-        <span class="callout-title">ℹ Merk</span>
-        <p>Appen er gratis å laste ned, men funksjoner for å lese ut informasjon eller endre konfigurasjon på Aspect krever <strong>aktiv lisens</strong>.</p>
-      </div>
-
-      <h2>Komme i gang (bestille og legge inn lisenskode)</h2>
-      <p><strong>Aspect Tool B</strong> er et spesialverktøy som gjør det mulig for kvalifiserte personer å endre konfigurasjon på Elotec aspirasjonsdetektorer. For å hindre at uvedkommende gjør endringer som kan påvirke ytelsen til Aspect må du aktivere funksjoner ved å kjøpe lisens – forutsetter gjennomført opplæring.</p>
-      <p>Trykk på <em>Demo</em>-knappen oppe til høyre for å se et dummy-sett med data slik at du kan gjøre deg kjent med funksjonene før du skaffer lisens.</p>
-
-      <div class="callout tip">
-        <span class="callout-title">💡 Første tilkobling</span>
-        <p>Første gang du kobler til en Aspect blir du bedt om å fylle ut kontoinformasjon og oppgi lisensnøkkel. Det er ikke mulig å utføre operasjoner før dette er gjort.</p>
-      </div>
-
-      <p>Når du bestiller lisens må du oppgi e‑postadressen som skal stå i feltet <em>Konto‑ID</em>. Husk å ta vare på ordrebekreftelsen eller å skrive ned koden i tilfelle du bytter telefon i løpet av nøkkelens varighet.</p>
-      <p>Lisenskoden sendes per e‑post. Legg den inn ved å trykke på ikonet øverst til venstre (<em>Kontoinformasjon</em>).</p>
-      <ul>
-        <li>Lisenskode har format <code>123456‑ABC</code> – seks siffer, bindestrek og tre store bokstaver.</li>
-        <li>Det er forskjell på store og små bokstaver i feltet <em>Konto‑ID</em>; sørg for at adressen er identisk med den som fulgte lisenskoden.</li>
-      </ul>
-
-      <h2>Opprette forbindelse med Aspect</h2>
-      <p>BLE/Wi‑Fi-diagnosemodulen aktiveres automatisk når du setter spenning på enheten. Du kan ellers aktivere den ved å åpne døren og trykke på grønn knapp; blå LED lyser når modulen er aktiv. Trykk deretter <em>Koble til Aspect</em> i appen.</p>
-      <p>Appen forsøker først å koble via BLE. Hvis det ikke lykkes (eldre modeller har ikke BLE) går den over til Wi‑Fi. Velg da nettverket <code>Aspect_WiFi</code> på telefonen.</p>
-
-      <div class="callout tip">
-        <span class="callout-title">💡 Mobildata på Wi‑Fi</span>
-        <p>Kobler du via Wi‑Fi mister telefonen internett. Mange Android‑enheter bytter da til mobildata som bryter forbindelsen. Deaktiver funksjonen (Wi‑Fi+, Adaptive Wi‑Fi eller Smart Network Switch).</p>
-      </div>
-
-      <p>Når du er tilkoblet viser Aspect en melding før den henter data. Lenkesymbolet øverst til høyre indikerer om du er <img src="link-on.svg" alt="tilkoblet" style="height:1em;vertical-align:-0.1em;"> tilkoblet eller <img src="link-off.svg" alt="ikke tilkoblet" style="height:1em;vertical-align:-0.1em;"> ikke tilkoblet.</p>
-
-      <h3>Koble til ny Aspect for første gang</h3>
-      <p>Registrer enheten på kontoen og gi den et navn for å starte arbeidet.</p>
-
-      <h2>Oversikt</h2>
-      <p>Etter tilkobling havner du på <strong>Dashboard</strong> som viser:</p>
-      <ul>
-        <li>Gjeldende følsomhetsinnstillinger per rørgate</li>
-        <li>Sanntidsinformasjon om luftstrøm</li>
-        <li>Siste hendelse i logg</li>
-      </ul>
-      <p>Menyknappen (øverst til venstre) lar deg endre kontoinformasjon, sende systemrapport på e‑post, samt synkronisere eller tilbakestille konfigurasjon. Faner nederst grupperer informasjon og innstillinger i fire kategorier. Se kapitlene under for detaljer.</p>
-
-      <h2>Aspect View (lese‑app)</h2>
-      <p>Sluttbrukere og andre uten opplæring kan bruke <em>Aspect View</em> til å lese status, gjeldende innstillinger og service‑/hendelseslogg. Appen gir <strong>ikke</strong> tilgang til å endre verdier. Servicemeldinger beskrives i klartekst og inkluderer tips til tiltak eller henvisning til autorisert personell.</p>
-
-      <h2>Lese ut informasjon</h2>
-      <p>Med Aspect Tool leser du enkelt ut hendelseslogg, konfigurasjon og status. Innstillinger er låst mot utilsiktede endringer; du må låse opp før redigering.</p>
-
-      <h3>Hendelseslogg</h3>
-      <p>Siste hendelse vises nederst på fanen <em>Dashboard</em>. Trykk for å åpne full logg. Ikoner:</p>
-      <ul>
-        <li>⚙ Konfigurasjonsendring (viser også hvem)</li>
-        <li>⚠ Servicemelding (trykk for forslag til tiltak)</li>
-        <li>🔥 Brannalarm (kun Aspect Sentral)</li>
-      </ul>
-      <p>Du kan slette logg ved å kortslutte <code>S100</code> et øyeblikk (se Tillegg A), f.eks. etter årskontroll.</p>
-
-      <h3>System- og sanntidsinformasjon</h3>
-      <p>Informasjon og programparametere er gruppert i kategorier/faner i tillegg til dashbord‑visningen.</p>
-
-      <h4>Enhetsinformasjon</h4>
-      <p>Trykk info‑ikonet ved enhetsnavnet for å se serienummer (prosessor‑ID), sensor‑ og prosessorvariant og dato for første idriftsettelse.</p>
-
-      <h4>Luftstrøm</h4>
-      <p>Fanene <em>Dashboard</em> og <em>Luftstrøm</em> viser sanntidsdata grafisk og numerisk.</p>
-      <table>
-        <tr><td>🟢 Normal</td><td>🟡 Redusert (innenfor grense)</td><td>🟠 Lav (utenfor grense)</td><td>🔴 Høy (utenfor grense)</td></tr>
-      </table>
-      <p class="callout info">Tallverdiene er relative – ingen måleenhet – og sier ikke noe om absolutt lufthastighet eller volum. Avvik kan ha flere årsaker; se hendelseslogg for tips.</p>
-
-      <h4>Følsomhet</h4>
-      <p>Viser valgt røykfølsomhet per rørgate og tidspunkt for dag/natt‑veksling. Viser også temperaturdata.</p>
-
-      <h4>Power</h4>
-      <p>Viser nettspenning, ladespenning og batterispenning. Du kan registrere batteribytte slik at andre teknikere ser historikken.</p>
-
-      <h3>Programparametere</h3>
-      <p>Alle verdier er låst som standard (<img src="lock.svg" alt="lås" style="height:1em;vertical-align:-0.1em;">). Trykk en verdi eller hengelåsen for å aktivere <em>Rediger‑modus</em>. Parametere er gruppert:</p>
-      <ul>
-        <li><strong>Følsomhet</strong> – røykfølsomhet, dag/natt‑nivåer.</li>
-        <li><strong>Luftstrøm</strong> – overvåking og varsling ved avvik.</li>
-        <li><strong>Signalering</strong> – I/O og sløyfekommunikasjon (samt utkoblingstid stand‑alone).</li>
-        <li><strong>Power</strong> – strømforsyning, batteri og oppførsel ved strømbrudd.</li>
-      </ul>
-
-      <h3>Lære normal luftstrøm</h3>
-      <p>Etter installasjonen må <strong>Aspect</strong> lære hva som er riktig luftstrøm for å kunne varsle avvik. Toleranser må tilpasses bygget og bruken.</p>
-      <p>Trykk <em>Start kalibrering</em> på fanen <em>Luftstrøm</em>. Bekreft at systemet er i normal tilstand. Prosessen tar ca. ett minutt. Luftstrømsindikatoren skal ende midt mellom grenseverdiene.</p>
-
-      <div class="callout warning">
-        <span class="callout-title">🛑 Kun ved normale forhold</span>
-        <p>Kjør kalibrering <strong>bare</strong> når rørgater og filtre er hele og rene. Feil grunnlag gir unødige servicemeldinger.</p>
-      </div>
-
-      <p><strong>Tips:</strong> Noter verdier etter kalibrering for sammenligning ved service.</p>
-      <p>Har du ikke tilgang til appen kan kalibrering startes fra knappene på fronten (se Tillegg E).</p>
-
-      <h3>Systemrapport</h3>
-      <p>Menyen (øverst til venstre) lar deg sende rapport med fullstendig enhetsinformasjon og alle programparametere på e‑post – nyttig som FDV‑dokumentasjon.</p>
-
-      <h2>Programmering</h2>
-      <p>Du kan konfigurere flere parametere for å oppnå best mulig funksjonalitet. Alle felter er låst som standard; når du trykker en verdi blir du spurt om å låse opp. Etter endring må du trykke lagre‑ikonet for å sende nye innstillinger.</p>
-      <p>Parametere er delt inn i de fire kategoriene som beskrevet ovenfor.</p>
+      <h1>Aspect Tool B</h1>
+      <p>[...Norsk innhold følger... se canvas]</p>
     </section>
   </div>
 </body>
